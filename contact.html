@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/gg.css" />
+		<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<style type="text/css">
+			.techuziti {
+				font-family: 'Fugaz One', cursive;
+				color: #1a95be;
+			}
+			
+			.inputgg {
+				padding: 10px;
+				margin: 5px;
+			}
+			
+			.leiyan {
+				padding: 10px;
+				margin: 5px;
+				height: 280px;
+			}
+			
+			.submit {
+				padding: 10px;
+				margin: 5px;
+				background: orange;
+				border: none;
+				color: #fff;
+				width: 100px;
+				height: 60px;
+			}
+			
+			.submit:hover {
+				background: #5bb2fc;
+				transition: all 0.5s linear;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="header">
+
+			<div class="header-top container">
+				<div class="header-nav">
+					<div class="header-logo">
+						<a href="index.html">
+							<h1>Colorful&nbsp;LiaoNing<span>Elegant&nbsp;DaLian</span></h1>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+					<span class="menu"></span>
+					<div class="header-menu">
+						<ul>
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="index.html#about" id="about1">About</a>
+							</li>
+							<li>
+								<a href="index.html#landmark" id="landmark1">Landmark</a>
+							</li>
+							<li>
+								<a href="index.html#blog" id="blog1">Blog</a>
+							</li>
+							<li>
+								<a href="horizon.html">Horizon</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+                            </li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="header-bottom"></div>
+		</div>
+
+		<div style="margin: 50px 0px;">
+			<div class="container">
+				<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" style="background: #f4f4f4; height: 100px;">
+					<div style="width: 200px; margin:30px  auto; color: #1a95be; font-size:30px ;  font-family:  'Fugaz One', cursive;">Contact Us</div>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="techuziti">Address:</h3>
+					<p>XiShan students' living area,</p>
+					<p>DaLian University of Technology,</p>
+					<p>LiaoNing, China.</p>
+					<h3 class="techuziti">Contact:</h3>
+					<p>MP: +86 15524892259</p>
+					<p>E-mail: fzy2016@mail.dlut.edu.cn</p>
+					<h3 class="techuziti">Developer:</h3>
+					<p>Keyi Lee</p>
+					<p>Ziyang Feng</p>
+					<h3 class="techuziti">College:</h3>
+					<p>College of Computer Science and Technology of DUT</p>
+				</div>
+				<div class="col-lg-8" style="padding: 10px;">
+					<input placeholder="Name" class="inputgg col-lg-4" />
+					<input placeholder="Email Adress" class="inputgg col-lg-4" />
+					<input placeholder="Subject" class="inputgg col-lg-3" />
+					<input placeholder="Message" class="leiyan col-lg-12" />
+					<input type="submit" value="SEND" class="submit col-lg-1" />
+				</div>
+			</div>
+		</div>
+		<!--中间内容放置-->
+
+		<div class="footer text-center">
+			<div class="container">
+
+				<div class="footer-top">
+					<div class="col-md-6 footer-left">
+						<h3>About Us</h3>
+						<p>我们是大连理工大学零时工队伍，前端由弱鸡fuujiro抠脚瞎写，后端由cjlee老板全力带飞。</p>
+						<a href="contact.html">Read More</a>
+					</div>
+					<div class="col-md-6 footer-right">
+						<h3>Get In Touch</h3>
+						<p>你可以考虑留下你的邮箱，我们会定期骚扰你。</p>
+						<div class="bottom-search">
+                            <form method="post" action="mail/contact_me.php">
+							    <input type="email" class="text" value="Enter email..." id="email_address" name="email_address"
+                                       onfocus="this.value = '';" onblur="if (this.value === 'Enter email...') {this.value = 'Enter email...';}">
+							    <input type="submit" value="SUBSCRIBE" class="submit" onclick="sendEmail()">
+                            </form>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="footer-bottom">
+					<p>Copyright &copy; 2017.All rights reserved. </p>
+				</div>
+			</div>
+
+			<a href="#top" id="goTop"> </a>
+			<!--返回顶部-->
+
+		</div>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+			$(function() {
+				$(function() {
+					$(window).scroll(function() {
+						if ($(window).scrollTop() > 100) {
+							$("#goTop").fadeIn(1500);
+						} else {
+							$("#goTop").fadeOut(1500);
+						}
+					});
+					$("#goTop").click(function() {
+						$('body,html').animate({
+							scrollTop: 0
+						}, 1000);
+						return false;
+					});
+				});
+			});
+		</script>
+		<!--置顶-->
+
+		<script>
+			$("span.menu").click(function() {
+				$(".header-menu").slideToggle("slow", function() {});
+			});
+		</script>
+		<!--导航隐藏点击显示-->
+
+	</body>
+
+</html>

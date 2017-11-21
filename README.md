@@ -1,2 +1,3 @@
-# BeautyDaLian
-a website to introduce the city "Dalian,China".
+# game
+游戏介绍网站
+偏欧美风
