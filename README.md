@@ -1,3 +1,2 @@
 # game
-游戏介绍网站
-偏欧美风
+Introduce about Dalian, China.
